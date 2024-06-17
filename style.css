@@ -126,28 +126,50 @@ span{
 }
 /** her ection**/
 .hero-section{
-    background-image: url(hero_image.jpg);
-    height: 320px;
-    background-size: cover;
+    position: relative;
+}
+.scrolling-images{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+}
+.image-item{
+    min-width: 100%;
+    transition: transform 0.3s;
+}
+.image-item img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btnn{
+    border: 1px solid transparent;
+    padding: 100px 20px;
+    font-size: 50px;
+    font-weight: 300;
+    background-color: transparent;
+    color: black;
+}
+.btnn:focus{
+    border-color: seagreen;
+    box-shadow: -10px -10px -10px rgb(210, 227, 227),
+    2px 2px 2px white;
+    margin: 2px;
 }
 .hero-message{
-    height: 40px;
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    border-radius: 3px;
-    font-size: 15px;
-    margin-bottom: 25px;
-
 }
 .hero-message a{
     text-decoration: none;
     color: #007185;
+}
+.main{
+    position: relative;
+    top: -300px;
 }
 .shop-section{
     display: flex;
@@ -177,7 +199,7 @@ span{
     color: #007185;
 }
 footer{
-    margin-top: 15px;
+    margin-top: -270px;
 }
 .foot-panel1{
     background-color: #374758;
