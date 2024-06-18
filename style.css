@@ -176,10 +176,6 @@ span{
     font-size: 22px;
     margin: 0;
 }
-.sidebar-top i {
-    padding-right: 10px;
-    font-size: 25px;
-}
 
 .sidebar-item {
     padding-left: 20px;
@@ -198,7 +194,6 @@ span{
     margin-top: 10px;
     font-family: Arial, sans-serif;
 }
-
 #sidebar-navigation-close {
     background-color: transparent;
     align-self: flex-start;
