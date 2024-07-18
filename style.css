@@ -3,6 +3,9 @@
     font-family: Arial;
     border: border-box;
 }
+.body{
+    overflow-x: hidden;
+}
 .navbar{
     height: 60px;
     background-color: #0f1111;
@@ -344,4 +347,16 @@ footer{
     font-size: 15px;
     text-align: center;
     padding-top: 5px;
+}
+@media screen and (max-width:992px)
+{  
+    .body{
+        overflow-x: hidden;
+    }  
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
