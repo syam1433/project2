@@ -3,7 +3,7 @@
     font-family: Arial;
     border: border-box;
 }
-.body{
+body{
     overflow-x: hidden;
 }
 .navbar{
@@ -348,15 +348,50 @@ footer{
     text-align: center;
     padding-top: 5px;
 }
-@media screen and (max-width:992px)
-{  
-    .body{
-        overflow-x: hidden;
-    }  
-    .box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
+@media screen and (max-width: 1024px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+            }
+            .nav-search {
+                width: 80%;
+            }
+            .shop-section .box {
+                width: 45%;
+                margin-top: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-search {
+                width: 90%;
+            }
+            .shop-section .box {
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar {
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-search {
+                width: 100%;
+            }
+            .shop-section .box {
+                width: 100%;
+                margin-top: 20px;
+            }
+            .main {
+                font-size: 10px;
+                width: 100%;
+            }
+        }
